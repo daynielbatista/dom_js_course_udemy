@@ -75,7 +75,17 @@
     enlaces.id = "mi_id";
     */
 
-    
+    //Crear Contenido
+
+    var sidebar = document.querySelector('#sidebar');
+    var nuevoElemento =document.createElement("H1");
+    var nuevoTexto = document.createTextNode("Hola Mundo");
+
+    nuevoElemento.appendChild(nuevoTexto);
+    sidebar.appendChild(nuevoElemento);
+
+
+
 
   });
   
