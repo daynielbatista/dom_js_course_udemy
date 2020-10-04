@@ -20,6 +20,8 @@
     contenido[0].style.display = 'none';
     */
 
+    //getElementsByTagName
+    /***
     var enlaces = document.getElementsByTagName('a');
     console.log(enlaces.length);
 
@@ -31,11 +33,49 @@
     console.log(enlacesSidebar);
 
     for (let i = 0; i < enlacesSidebar.length; i++) {
-      enlacesSidebar[i].setAttribute('href', 'http://www.as.com');
-      
+      enlacesSidebar[i].setAttribute('href', 'http://www.as.com');      
     }
+    */
 
+    //querySelector
+    /***
+    var logo = document.querySelector('.logo');
+    console.log(logo);
 
+    var encabezado = document.querySelectorAll('h2, footer p');
+    console.log(encabezado);
+
+    var encabezado = document.querySelectorAll('h2');
+    console.log(encabezado[1].innerText); 
+    
+    var enlaces = document.querySelectorAll('a');
+    console.log(enlaces);  
+    */
+
+    //querySelectorAll
+    /***
+    var enlace = document.querySelectorAll('a');
+    
+    for (let i = 0; i < enlace.length; i++) {
+      console.log(enlace[i]);      
+    }
+    */
+
+    //Nodos
+    /***
+    var enlaces = document.querySelectorAll('#menu ul li a')[0];
+    //console.log(enlaces.innerText);
+    console.log(enlaces.nodeType);
+    console.log(enlaces.nodeName);
+    console.log(enlaces.attributes[0]);
+    console.log(enlaces.firstChild);
+    console.log(enlaces.nodeName.nodeValue);
+
+    //enlaces.firstChild.nodeValue = "Home";
+    enlaces.id = "mi_id";
+    */
+
+    
 
   });
   
