@@ -76,7 +76,7 @@
     */
 
     //Crear Contenido
-
+    /***
     var sidebar = document.querySelector('#sidebar');
     var nuevoElemento =document.createElement("H1");
     var nuevoTexto = document.createTextNode("Hola Mundo");
@@ -84,6 +84,32 @@
     nuevoElemento.appendChild(nuevoTexto);
     sidebar.appendChild(nuevoElemento);
 
+    //Agregar entrada 6
+    var enlacesSidebar = document.querySelectorAll('#sidebar ul');
+    //creando el enlace
+    var nuevoEnlace = document.createElement('A');
+    nuevoEnlace.setAttribute('href', 'http://www.sport.es');
+    var textoEnlace = document.createTextNode('Entrada 6');
+    nuevoEnlace.appendChild(textoEnlace);
+
+    //Creando la lista
+    var nuevaLista = document.createElement('LI');
+    nuevaLista.appendChild(nuevoEnlace);
+    //Lo agregamos al Menu
+    enlacesSidebar[0].appendChild(nuevaLista);
+    ***/
+
+    //Clonar Nodo
+    /***
+    var contenido = document.querySelectorAll('main');
+    var nuevoContenido = contenido[0].cloneNode(true);
+
+    var sidebar = document.querySelector('aside');
+
+    sidebar.insertBefore(nuevoContenido, sidebar.childNodes[5]);
+    */
+
+    
 
 
 
