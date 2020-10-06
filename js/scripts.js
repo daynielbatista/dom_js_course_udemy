@@ -126,8 +126,34 @@
       sidebar.insertBefore(nuevoElemento, sidebar.childNodes[1]);      
     }*/
 
+    //Eliminar Nodos
+    /***
+    var primerPost = document.querySelector('main article');
+    console.log(primerPost);
 
+    primerPost.parentNode.removeChild(primerPost);
 
+    var enlaces = document.querySelector('#navegacion nav ul li a');
+    console.log(enlaces);
+
+    enlaces.parentNode.removeChild(enlaces);
+     */
+    
+    var viejoNodo = document.querySelector('main h2');
+    var nuevoNodo = document.querySelector('footer h2');
+    viejoNodo.parentNode.replaceChild(nuevoNodo, viejoNodo);
+   
+
+    //Reemplazar Nodo con uno nuevo
+     
+    var nuevoTitulo = document.createElement('H2');
+    var nuevoTexto = document.createTextNode('Hola Mundo');
+    nuevoTitulo.appendChild(nuevoTexto);
+
+    var viejoNodo = document.querySelector('main h2');
+    viejoNodo.parentNode.replaceChild(nuevoTitulo, viejoNodo);
+    
+   
 
   });
   
