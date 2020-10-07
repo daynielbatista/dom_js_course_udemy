@@ -139,7 +139,7 @@
     enlaces.parentNode.removeChild(enlaces);
      */
     
-    var viejoNodo = document.querySelector('main h2');
+    /*var viejoNodo = document.querySelector('main h2');
     var nuevoNodo = document.querySelector('footer h2');
     viejoNodo.parentNode.replaceChild(nuevoNodo, viejoNodo);
    
@@ -152,7 +152,7 @@
 
     var viejoNodo = document.querySelector('main h2');
     viejoNodo.parentNode.replaceChild(nuevoTitulo, viejoNodo);
-    
+    */
    
 
   });
